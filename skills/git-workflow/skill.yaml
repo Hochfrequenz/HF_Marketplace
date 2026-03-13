@@ -6,5 +6,5 @@ version: 1.0.0
 category: productivity
 tags: [git, workflow, branching, commits]
 compatibility: ">=1.0.0"
-installCommand: "claude skill install git-workflow"
+installCommand: "./install.sh git-workflow"
 sourceUrl: "https://github.com/hf-marketplace/git-workflow"

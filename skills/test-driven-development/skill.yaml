@@ -6,5 +6,5 @@ version: 1.0.0
 category: testing
 tags: [tdd, testing, quality]
 compatibility: ">=1.0.0"
-installCommand: "claude skill install test-driven-development"
+installCommand: "./install.sh test-driven-development"
 sourceUrl: "https://github.com/hf-marketplace/test-driven-development"

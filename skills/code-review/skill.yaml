@@ -6,5 +6,5 @@ version: 1.0.0
 category: workflow
 tags: [review, quality, collaboration]
 compatibility: ">=1.0.0"
-installCommand: "claude skill install code-review"
+installCommand: "./install.sh code-review"
 sourceUrl: "https://github.com/hf-marketplace/code-review"
