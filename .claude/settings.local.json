@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/Users/JonatanMeiske/Documents/50_KI_Agenten/HF_Marketplace\" && npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm --yes 2>&1)",
+      "Bash(cd \"C:/Users/JonatanMeiske/Documents/50_KI_Agenten/HF_Marketplace\" && npx create-next-app@latest temp-init --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm --yes 2>&1)",
+      "Bash(cd \"C:/Users/JonatanMeiske/Documents/50_KI_Agenten/HF_Marketplace\" && cp -r temp-init/.git . 2>/dev/null; cp -r temp-init/src . ; cp -r temp-init/public . ; cp temp-init/package.json . ; cp temp-init/tsconfig.json . ; cp temp-init/next.config.ts . ; cp temp-init/postcss.config.mjs . ; cp temp-init/.gitignore . ; cp temp-init/next-env.d.ts . ; cp temp-init/eslint.config.mjs . ; cp -r temp-init/node_modules . 2>/dev/null; rm -rf temp-init && ls -la)",
+      "Bash(cd \"C:/Users/JonatanMeiske/Documents/50_KI_Agenten/HF_Marketplace\" && rm -rf temp-init 2>/dev/null; echo \"cleaned\")",
+      "Bash(cd \"C:/Users/JonatanMeiske/Documents/50_KI_Agenten/HF_Marketplace\" && npm install gray-matter react-markdown remark-gfm js-yaml && npm install -D @types/js-yaml 2>&1)"
+    ]
+  }
+}
