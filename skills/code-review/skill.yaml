@@ -1,0 +1,10 @@
+name: code-review
+displayName: Code Review
+description: Structured code review process that checks for correctness, readability, performance, and security.
+author: community
+version: 1.0.0
+category: workflow
+tags: [review, quality, collaboration]
+compatibility: ">=1.0.0"
+installCommand: "claude skill install code-review"
+sourceUrl: "https://github.com/hf-marketplace/code-review"

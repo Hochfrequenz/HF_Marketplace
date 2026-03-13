@@ -1,0 +1,10 @@
+name: systematic-debugging
+displayName: Systematic Debugging
+description: A structured, methodical approach to finding and fixing bugs. Guides you through reproduction, hypothesis formation, and verification.
+author: community
+version: 1.0.0
+category: development
+tags: [debugging, bugfix, diagnostics]
+compatibility: ">=1.0.0"
+installCommand: "claude skill install systematic-debugging"
+sourceUrl: "https://github.com/hf-marketplace/systematic-debugging"

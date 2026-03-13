@@ -1,0 +1,10 @@
+name: git-workflow
+displayName: Git Workflow
+description: Best practices for branching, committing, and merging with Git. Includes conventional commits and PR workflows.
+author: community
+version: 1.0.0
+category: productivity
+tags: [git, workflow, branching, commits]
+compatibility: ">=1.0.0"
+installCommand: "claude skill install git-workflow"
+sourceUrl: "https://github.com/hf-marketplace/git-workflow"

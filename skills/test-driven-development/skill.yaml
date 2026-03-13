@@ -1,0 +1,10 @@
+name: test-driven-development
+displayName: Test-Driven Development
+description: Write failing tests first, then implement the minimal code to make them pass. Red-Green-Refactor cycle.
+author: community
+version: 1.0.0
+category: testing
+tags: [tdd, testing, quality]
+compatibility: ">=1.0.0"
+installCommand: "claude skill install test-driven-development"
+sourceUrl: "https://github.com/hf-marketplace/test-driven-development"
