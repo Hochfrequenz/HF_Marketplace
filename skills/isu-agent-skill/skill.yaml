@@ -1,0 +1,10 @@
+name: isu-agent-skill
+displayName: SAP IS-U Wissensagent
+description: Beantwortet SAP IS-U Fragen aus einem indexierten PDF-Handbuch und gespeichertem Expertenwissen. Deckt Stammdaten, Gerätewesen, Ablesung, Abrechnung, Faktura und Prozesse ab.
+author: Hochfrequenz
+version: 1.0.0
+category: development
+tags: [sap, isu, rag, knowledge-base, chromadb, enterprise]
+compatibility: ">=1.0.0"
+installCommand: "claude skill install isu-agent-skill"
+sourceUrl: "https://github.com/Hochfrequenz/isu-agent-skill"
