@@ -8,8 +8,9 @@ export function generateStaticParams() {
   return getAllSkills().map((skill) => ({ slug: skill.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const skill = getSkillBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const skill = getSkillBySlug(slug);
   if (!skill) return { title: "Skill Not Found" };
   return {
     title: `${skill.displayName} - HF Marketplace`,
@@ -17,8 +18,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function SkillPage({ params }: { params: { slug: string } }) {
-  const skill = getSkillBySlug(params.slug);
+export default async function SkillPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const skill = getSkillBySlug(slug);
   if (!skill) notFound();
 
   return (

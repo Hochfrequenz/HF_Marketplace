@@ -6,15 +6,17 @@ export function generateStaticParams() {
   return getCategories().map((cat) => ({ cat }));
 }
 
-export function generateMetadata({ params }: { params: { cat: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ cat: string }> }) {
+  const { cat } = await params;
   return {
-    title: `${params.cat.charAt(0).toUpperCase() + params.cat.slice(1)} Skills - HF Marketplace`,
+    title: `${cat.charAt(0).toUpperCase() + cat.slice(1)} Skills - HF Marketplace`,
   };
 }
 
-export default function CategoryPage({ params }: { params: { cat: string } }) {
-  const skills = getSkillsByCategory(params.cat);
-  const categoryLabel = params.cat.charAt(0).toUpperCase() + params.cat.slice(1);
+export default async function CategoryPage({ params }: { params: Promise<{ cat: string }> }) {
+  const { cat } = await params;
+  const skills = getSkillsByCategory(cat);
+  const categoryLabel = cat.charAt(0).toUpperCase() + cat.slice(1);
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8">
